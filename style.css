@@ -114,8 +114,8 @@ nav a:focus {
 }
 
 .about-photo {
-  width: 240px;
-  height: 300px;
+  width: 180px;
+  height: 225px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
