@@ -1,6 +1,504 @@
+/* General Page */
 body {
+  margin: 0;
+  background-color: #FFF8E7;
+  color: #252525;
   font-family: Arial, sans-serif;
 }
-h1 {
+
+
+/* Logo */
+.logo {
+  width: 220px;
+  height: auto;
+}
+
+
+/* Header */
+header {
+  background-color: #512B58;
+}
+
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #FFF8E7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #2AA6A4;
+}
+
+nav a:focus {
+  outline: 3px solid #2AA6A4;
+  outline-offset: 4px;
+}
+
+
+/* Introduction */
+#introduction {
+  background-color: #FFF8E7;
   text-align: center;
+  padding: 80px 20px;
+}
+
+#introduction .intro {
+  color: #006D6F;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+#introduction h1 {
+  color: #512B58;
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+#introduction h2 {
+  color: #006D6F;
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+#introduction p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#introduction .location {
+  color: #512B58;
+  font-weight: bold;
+}
+
+
+/* About Me */
+#about {
+  background-color: #FFFFFF;
+  padding: 70px 10%;
+}
+
+#about h2 {
+  color: #512B58;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-photo {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.about-text {
+  max-width: 650px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+/* Projects */
+#projects {
+  background-color: #FFF8E7;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+#projects h2 {
+  color: #512B58;
+  font-size: 36px;
+}
+
+.projects-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(81, 43, 88, 0.15);
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  color: #512B58;
+  font-size: 24px;
+  margin: 18px 0 10px;
+}
+
+.project-card p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* Travel */
+#travel {
+  background-color: #FFFFFF;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+#travel h2 {
+  color: #512B58;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.travel-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.travel-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.travel-card {
+  background-color: #FFF8E7;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(81, 43, 88, 0.15);
+  text-align: left;
+}
+
+.travel-card h3 {
+  color: #512B58;
+  text-align: center;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.travel-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.travel-images figure {
+  margin: 0;
+}
+
+.travel-images img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.travel-images figcaption {
+  color: #006D6F;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.travel-content {
+  margin-top: 20px;
+}
+
+.travel-content h4 {
+  color: #006D6F;
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.travel-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.photo-credit {
+  color: #666666;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 20px 0 0;
+}
+
+
+/* Careers */
+#careers {
+  background-color: #FFF8E7;
+  padding: 70px 8%;
+}
+
+#careers h2 {
+  color: #512B58;
+  font-size: 36px;
+  text-align: center;
+}
+
+.careers-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.career-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(81, 43, 88, 0.15);
+}
+
+.career-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.career-content {
+  padding: 22px;
+}
+
+.career-card h3 {
+  color: #512B58;
+  font-size: 23px;
+  margin: 0 0 18px;
+}
+
+.career-card h4 {
+  color: #006D6F;
+  font-size: 17px;
+  margin: 15px 0 7px;
+}
+
+.career-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Connect */
+#connect {
+  background-color: #512B58;
+  color: #FFF8E7;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#connect h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#connect p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+/* Connect Links */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #006D6F;
+  color: #FFF8E7;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.links a:hover {
+  background-color: #2AA6A4;
+  color: #252525;
+}
+
+.links a:focus {
+  outline: 3px solid #FFF8E7;
+  outline-offset: 4px;
+}
+
+
+/* Section Navigation Buttons */
+.section-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.section-nav a {
+  display: inline-block;
+  min-width: 100px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF8E7;
+  background-color: #512B58;
+  border: 1px solid #512B58;
+}
+
+.section-nav a:nth-child(even) {
+  background-color: #006D6F;
+  border-color: #006D6F;
+}
+
+.section-nav a:hover {
+  background-color: #2AA6A4;
+  border-color: #2AA6A4;
+  color: #252525;
+}
+
+.section-nav a:focus {
+  outline: 3px solid #2AA6A4;
+  outline-offset: 3px;
+}
+
+
+/* Section Navigation on Purple Background */
+#connect .section-nav a {
+  background-color: #006D6F;
+  border-color: #006D6F;
+  color: #FFF8E7;
+}
+
+#connect .section-nav a:hover {
+  background-color: #2AA6A4;
+  border-color: #2AA6A4;
+  color: #252525;
+}
+
+
+/* Mobile Layout */
+@media (max-width: 800px) {
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #introduction h1 {
+    font-size: 42px;
+  }
+
+  #introduction h2 {
+    font-size: 21px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 200px;
+    height: 250px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-images {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-images img {
+    height: 220px;
+  }
+
+  .career-list {
+    grid-template-columns: 1fr;
+  }
+
 }
