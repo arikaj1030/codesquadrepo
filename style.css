@@ -113,9 +113,10 @@ nav a:focus {
   margin: 0 auto;
 }
 
-.about-photo {
-  width: 240px;
-  height: 300px;
+#about .about-content img {
+  width: 150px;
+  height: 190px;
+  max-width: 150px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
@@ -445,60 +446,4 @@ nav a:focus {
   background-color: #2AA6A4;
   border-color: #2AA6A4;
   color: #252525;
-}
-
-
-/* Mobile Layout */
-@media (max-width: 800px) {
-
-  nav {
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px 20px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  #introduction h1 {
-    font-size: 42px;
-  }
-
-  #introduction h2 {
-    font-size: 21px;
-  }
-
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-photo {
-    width: 200px;
-    height: 250px;
-  }
-
-  .project-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .travel-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .travel-images {
-    grid-template-columns: 1fr;
-  }
-
-  .travel-images img {
-    height: 220px;
-  }
-
-  .career-list {
-    grid-template-columns: 1fr;
-  }
-
 }
